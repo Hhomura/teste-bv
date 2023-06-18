@@ -1,0 +1,34 @@
+<div class="jumbotron" style="padding: 20px;">
+  <h1 class="display-4">Buscando Vagas</h1>
+  <p class="lead">Site responsável pela procura e oferta de Vagas de Emprego</p>
+  <hr class="my-4">
+  <p>Desenvolvimento do Projeto.</p>
+  {{#if empresas}}
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/empresa/logout" role="button">Sair da conta</a>
+  </p>
+  {{else}}
+  {{#if usuario}}
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/usuario/logout" role="button">Sair da conta</a>
+  </p>
+  {{else}}
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/empresa/login" role="button">Logar como Empresa</a>
+  </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/empresa/register" role="button">Registrar Empresa</a>
+  </p>
+
+  <p class="lead">
+    <a class="btn btn-success btn-lg" href="/usuario/login" role="button">Logar como Usuário</a>
+  </p>
+
+   <p class="lead">
+    <a class="btn btn-success btn-lg" href="/usuario/register" role="button">Cadastrar como Usuario</a>
+  </p>
+  {{/if}}
+
+  {{/if}}
+  
+</div>

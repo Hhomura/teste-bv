@@ -1,0 +1,15 @@
+<h2>Cadastro e Manipuilação dos dados das Vagas</h2>
+
+<a href="/vagas/register"><button class="btn btn-success">Publicar Nova Vaga</button></a>
+
+<hr>
+{{#each vagas}}
+    <div class="card w-50 m-4">
+        <div class="card-body">
+                <h5 class="card-title">{{titulo}}</h5>
+                <p class="card-text">{{descricao}}</p>
+                <a href="#" class="btn btn-danger">Fechar Vaga</a>
+                <a href="#" class="btn btn-primary">Analisar Vaga</a>
+            </div>
+        </div>
+{{/each}}
